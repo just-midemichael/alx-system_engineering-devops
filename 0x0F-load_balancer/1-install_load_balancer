@@ -2,9 +2,9 @@
 # Configure Nginx so that its HTTP response contains
 # a custom header
 # Add HAProxy PPA
-sudo apt-get -y install software-properties-common
-sudo add-apt-repository -y ppa:vbernat/haproxy-2.5
-sudo apt-get -y update
+apt-get install --no-install-recommends software-properties-common
+add-apt-repository ppa:vbernat/haproxy-2.5
+apt-get install haproxy=2.5.\*
 
 # Install HAProxy
 sudo apt-get -y install haproxy

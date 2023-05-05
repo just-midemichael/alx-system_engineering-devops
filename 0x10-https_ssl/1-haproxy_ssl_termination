@@ -40,7 +40,7 @@ frontend http_front
         redirect scheme https if !{ ssl_fc }
         default_backend http_back
 
-backend http-back
+backend http_back
         balance roundrobin
         server 180950-web-01 54.165.51.43:80 check
         server 180950-web-02 174.129.55.119:80 check
